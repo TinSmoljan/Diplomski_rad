@@ -1,17 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styling/App.css";
 import Logos from "./logos";
 import IntroText from "./openingText";
 import Contact from "./contactInfo";
+import NavigationBar from "./components/navigationBar";
 
 function App() {
+  const [loggedIn, setLoggedin] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <Logos name_logo="school"></Logos>
-        <IntroText name="Tin Smoljan"></IntroText>
-        <Contact></Contact>
-      </header>
+      <NavigationBar loggedIn={true}></NavigationBar>
     </div>
   );
 }

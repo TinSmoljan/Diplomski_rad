@@ -1,0 +1,134 @@
+#navigation-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 1em;
+
+  font-family: Poppins;
+  max-height: 150px;
+}
+
+#logo-and-title {
+  flex: 1;
+  flex-grow: 3;
+  display: flex;
+  flex-direction: row;
+}
+
+#main-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: scale(0.8);
+}
+
+#organize {
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.54);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#rest-of-navigation {
+  flex: 1;
+  flex-grow: 4;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #e0e0e0;
+
+  /* width: 35em; */
+  margin-top: 0.6em;
+}
+
+#my-corner-and-contact-us {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+#my-corner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#sign-up-and-sign-in {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+#sign-up {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  color: #e0e0e0;
+
+  background: #45484a;
+  box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.72),
+    -9px -9px 16px rgba(112, 112, 112, 0.54);
+  border-radius: 48.5px;
+
+  margin: 40px 0 40px 0;
+  width: 150px;
+}
+
+#sign-in {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  color: #eeeeee;
+
+  background: linear-gradient(
+    104.38deg,
+    #ff9733 -37.42%,
+    rgba(255, 122, 0, 0) 300%
+  );
+
+  box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.72),
+    -9px -9px 16px rgba(112, 112, 112, 0.54);
+  border-radius: 48.5px;
+
+  margin: 40px 0 40px 0;
+  width: 150px;
+}
+
+#name-and-log-out {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+#ime {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: #e0e0e0;
+  font-weight: 550;
+
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.32);
+}
+
+#log-out {
+  transform: scale(2.5) scaleX(-1);
+  margin-top: 60px;
+  margin-left: 30px;
+
+}

@@ -7,7 +7,7 @@ type User_name = {
 
 const IntroText: React.FC<User_name> = ({ name }) => (
   <div>
-    <h1 id="prviRed">Hi,</h1>
+    <h1 id="prviRed">Hello,</h1>
     <h2 id="drugiRed">my name is {name} and this will be my master's degree.</h2>
   </div>
 );
