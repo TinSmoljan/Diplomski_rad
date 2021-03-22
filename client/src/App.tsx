@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <NavigationBar loggedIn={true}></NavigationBar>
+      <NavigationBar loggedIn={false}></NavigationBar>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import "../styling/navigationBar.css";
 import { ReactComponent as Logo } from "../images/Main-logo.svg";
-import logOutIcon from "../images/logout.png";
 import {RiLogoutBoxLine} from "react-icons/ri"
 
 
@@ -16,10 +15,7 @@ const isLogedIn = (loggedIn: boolean) => {
   } else {
     return (
       <div id="name-and-log-out">
-        {/* <h2 id="ime">Tin Smoljan</h2>
-        <img id="log-out" src={logOutIcon} alt="odjava"></img> */}
         <h2 id="ime">Tin Smoljan</h2>
-        {/* <img id="log-out" src={MeetingRoomIcon} alt="odjava"></img> */}
         <RiLogoutBoxLine id="log-out"></RiLogoutBoxLine>
       </div>
     );
