@@ -1,0 +1,61 @@
+.main-page-right {
+  height: 582px;
+  text-align: center;
+  padding-left: 6em;
+  padding-right: 7em;
+  background-color: #373e4b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#gym-illustration {
+  transform: scale(0.9) translate(-190px, -20px);
+}
+
+#info-gym {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: Poppins;
+}
+
+.main-text-right {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  text-align: right;
+  line-height: 190%;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-shadow: 9px 9px 9px rgba(0, 0, 0, 0.9);
+}
+
+.paragraph-right {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: right;
+  color: #b5b5b5;
+  transform: translate(0px, -20px);
+  
+}
+
+.botun-right {
+  box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.72),
+    -9px -9px 16px rgba(112, 112, 112, 0.33);
+  border-radius: 84.5px;
+  color: #b5b5b5;
+  font-size: 40px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height:100px;
+}
+
+#dumbell-logo {
+  transform: scale(0.8) translate(10px);
+}

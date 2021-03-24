@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import "./styling/App.css";
-import Logos from "./logos";
-import IntroText from "./openingText";
-import Contact from "./contactInfo";
-import NavigationBar from "./components/navigationBar";
+import MainPageStart from "./components/mainPageStart";
+import MainPageGym from "./components/mainPage-gym";
 
 function App() {
   const [loggedIn, setLoggedin] = useState(false);
 
   return (
     <div className="App">
-      <NavigationBar loggedIn={false}></NavigationBar>
+      <MainPageStart loggedIn={true}></MainPageStart>
+      <MainPageGym></MainPageGym>
     </div>
   );
 }

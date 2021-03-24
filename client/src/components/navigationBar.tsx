@@ -1,15 +1,14 @@
 import React from "react";
 import "../styling/navigationBar.css";
 import { ReactComponent as Logo } from "../images/Main-logo.svg";
-import {RiLogoutBoxLine} from "react-icons/ri"
-
+import { RiLogoutBoxLine } from "react-icons/ri";
 
 const isLogedIn = (loggedIn: boolean) => {
   if (loggedIn === false) {
     return (
       <div id="sign-up-and-sign-in">
-        <button id="sign-up">Sign up</button>
-        <button id="sign-in">Sign in</button>
+        <div id="sign-up">Sign up</div>
+        <div id="sign-in">Sign in</div>
       </div>
     );
   } else {

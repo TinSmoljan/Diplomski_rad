@@ -1,0 +1,13 @@
+#main {
+  height: 722px;
+  text-align: center;
+  padding-left: 6em;
+  padding-right: 6em;
+  background: linear-gradient(
+      172.94deg,
+      rgba(60, 61, 63, 0.82) 0.18%,
+      rgba(56, 62, 72, 0.9) 46.99%,
+      #373e4b 80.45%
+    ),
+    url(../images/naslovna.jpg);
+}
