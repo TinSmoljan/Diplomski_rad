@@ -1,0 +1,44 @@
+#transition_blue {
+  position: relative;
+  width: 100%;
+  background: #373e4b;
+}
+
+.child {
+  height: 50px;
+  border-bottom: 3px solid transparent;
+}
+
+.second_orange {
+  background: #fc9c43;
+}
+
+.way_downRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  top: 0;
+  left: 0;
+  clip-path: polygon(0% 0, 0% 100%, 100% 100%); /*upRight */
+  z-index: 1;
+}
+
+#transition_orange {
+  position: relative;
+  width: 100%;
+  background: #fc9c43;
+}
+
+.second_babyBlue {
+  background: #68E1FD;
+}
+
+.way_upRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  top: 0;
+  left: 0;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%); /*upRight */
+  z-index: 1;
+}

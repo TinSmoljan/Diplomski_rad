@@ -1,21 +1,21 @@
 import React from "react";
-import "../styling/navigationBar.css";
+import styles from "../styling/navigationBar.module.css";
 import { ReactComponent as Logo } from "../images/Main-logo.svg";
 import { RiLogoutBoxLine } from "react-icons/ri";
 
 const isLogedIn = (loggedIn: boolean) => {
   if (loggedIn === false) {
     return (
-      <div id="sign-up-and-sign-in">
-        <div id="sign-up">Sign up</div>
-        <div id="sign-in">Sign in</div>
+      <div id={styles.sign_up_and_sign_in}>
+        <div id={styles.sign_up}>Sign up</div>
+        <div id={styles.sign_in}>Sign in</div>
       </div>
     );
   } else {
     return (
-      <div id="name-and-log-out">
-        <h2 id="ime">Tin Smoljan</h2>
-        <RiLogoutBoxLine id="log-out"></RiLogoutBoxLine>
+      <div id={styles.name_and_log_out}>
+        <h2 id={styles.ime}>Tin Smoljan</h2>
+        <RiLogoutBoxLine id={styles.log_out}></RiLogoutBoxLine>
       </div>
     );
   }
@@ -29,19 +29,19 @@ const navigationBar: React.FC<navigationBar_properties> = ({ loggedIn }) => {
   const button = isLogedIn(loggedIn);
 
   return (
-    <div id="navigation-bar">
-      <div id="logo-and-title">
-        <div id="main-logo">
+    <div id={styles.navigation_bar}>
+      <div id={styles.logo_and_title}>
+        <div id={styles.main_logo}>
           <Logo />
         </div>
-        <div id="organize">
+        <div id={styles.organize}>
           <h1> Organize </h1>
         </div>
       </div>
-      <div id="rest-of-navigation">
-        <div id="my-corner-and-contact-us">
-          <h2 id="my-corner">My corner</h2>
-          <h2 id="contact-us">Contact us</h2>
+      <div id={styles.rest_of_navigation}>
+        <div id={styles.my_corner_and_contact_us}>
+          <h2 id={styles.my_corner}>My corner</h2>
+          <h2 id={styles.contact_us}>Contact us</h2>
         </div>
         {button}
       </div>

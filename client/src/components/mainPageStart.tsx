@@ -1,7 +1,7 @@
 import React from "react";
 import NavigationBar from "../components/navigationBar";
 import MainPageStartInfo from "./mainPageStart-info";
-import "../styling/mainPageStart.css"
+import style from "../styling/mainPageStart.module.css";
 
 type myProps = {
   loggedIn: boolean;
@@ -10,7 +10,7 @@ type myProps = {
 class MainPageStart extends React.Component<myProps, {}> {
   render() {
     return (
-      <div id="main">
+      <div id={style.main}>
         <NavigationBar loggedIn={this.props.loggedIn}></NavigationBar>
         <MainPageStartInfo></MainPageStartInfo>
       </div>

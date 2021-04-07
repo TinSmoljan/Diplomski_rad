@@ -1,0 +1,61 @@
+.instance_page {
+  height: 582px;
+  text-align: center;
+  padding-left: 6em;
+  padding-right: 7em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.background_restaurant {
+  background-color: #fc9c43;
+}
+
+.info {
+  font-family: Poppins;
+}
+
+.main_text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 190%;
+  letter-spacing: 0.03em;
+  text-shadow: 9px 9px 9px rgba(0, 0, 0, 0.6);
+  text-align: left;
+}
+
+.main_text_color_restaurant {
+  color: #373e4b;
+}
+.secondary_text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  transform: translate(0px, -20px);
+  text-align: left;
+}
+
+.secondary_text_color_restaurant {
+  color: #5c5c5c;
+}
+
+.browse_botun {
+  box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.72), -9px -9px 16px rgba(112, 112, 112, 0.33);
+  border-radius: 84.5px;
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+#restaurant_illustration {
+  transform: scale(0.8) translate(6.5em);
+}
+
+#restaurant_logo {
+  transform: scale(0.8) translate(10px);
+}

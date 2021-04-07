@@ -1,4 +1,4 @@
-#navigation-bar {
+#navigation_bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,15 +9,15 @@
   max-height: 150px;
 }
 
-#logo-and-title {
+#logo_and_title {
   flex: 1;
   flex-grow: 3;
   display: flex;
   flex-direction: row;
-  transform: translate(-8px);
+  transform: translate(-12px);
 }
 
-#main-logo {
+#main_logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,7 +32,7 @@
   font-weight: bold;
 }
 
-#rest-of-navigation {
+#rest_of_navigation {
   flex: 1;
   flex-grow: 4;
 
@@ -49,30 +49,30 @@
   margin-top: 0.6em;
 }
 
-#my-corner-and-contact-us {
+#my_corner_and_contact_us {
   display: flex;
   justify-content: space-around;
   flex: 1;
 }
-#my-corner {
+#my_corner {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#contact-us {
+#contact_us {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#sign-up-and-sign-in {
+#sign_up_and_sign_in {
   display: flex;
   justify-content: space-around;
   flex: 1;
 }
 
-#sign-up {
+#sign_up {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -91,7 +91,7 @@
   align-items: center;
 }
 
-#sign-in {
+#sign_in {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -116,7 +116,7 @@
   align-items: center;
 }
 
-#name-and-log-out {
+#name_and_log_out {
   display: flex;
   justify-content: center;
   flex: 1;
@@ -133,6 +133,6 @@
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.32);
 }
 
-#log-out {
+#log_out {
   transform: scale(2.5) scaleX(-1) translate(-15px, 23px);
 }
