@@ -1,0 +1,144 @@
+#contact_us {
+  padding-left: 6em;
+  padding-right: 7em;
+  background-image: url(../../images/email-writing.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  height: 100vh;
+}
+
+#info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#headings {
+  transform: translate(0, -3em);
+}
+
+#main_heading {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 5.8vw;
+  letter-spacing: 0.02em;
+  color: #ff9733;
+  text-shadow: 9px 9px 8px rgba(0, 0, 0, 0.41);
+}
+
+#secondary_heading {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.82vw;
+  line-height: 0em;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.82);
+  transform: translateY(3.25vw);
+}
+
+#paragraph {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.65vw;
+  line-height: 1.96vw;
+  color: #b5b5b5;
+  transform: translateY(-60px);
+}
+
+#send_an_email_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 17px 0px 0px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 90px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.94vw;
+  line-height: 4.37vw;
+  color: #efefef;
+  height: 2em;
+  transition: transform 0.5s;
+  transform: translateY(-3.91vw);
+}
+#send_an_email_button:hover {
+  transform: scale(1.1) translateY(-3.91vw);
+  cursor: pointer;
+}
+
+#email_icon {
+  transform: scale(0.8) translate(0.5em);
+}
+
+#contactUs_illustration {
+  transform: scale(0.8) translate(6em, 4em);
+  filter: drop-shadow(10px 19px 11px rgba(0, 0, 0, 0.42));
+}
+
+@media screen and (max-width: 1280px) {
+  #contactUs_illustration {
+    display: none;
+  }
+
+  #main_heading {
+    font-size: 7vw;
+  }
+
+  #secondary_heading {
+    font-size: 3vw;
+  }
+
+  #paragraph {
+    line-height: 2.55vw;
+    font-size: 2.5vw;
+  }
+
+  #send_an_email_button {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #contact_us {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #secondary_heading {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #contact_us {
+    height: 70vh;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+
+  #main_heading {
+    font-size: 13vw;
+  }
+
+  #secondary_heading {
+    display: none;
+  }
+
+  #paragraph {
+    font-size: 5vw;
+    line-height: 18px;
+  }
+
+  #send_an_email_button {
+    font-size: 8vw;
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
-import NavigationBar from "../components/navigationBar";
-import MainPageStartInfo from "./mainPageStart-info";
-import style from "../styling/mainPageStart.module.css";
+import NavigationBar from "../../components/navigationBar";
+import MainPageStartInfo from "../homePage/mainPageStart-info";
+import style from "../../styling/homePage/mainPageStart.module.css";
 
 type myProps = {
   loggedIn: boolean;

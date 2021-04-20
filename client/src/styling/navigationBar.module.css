@@ -4,7 +4,6 @@
   justify-content: space-between;
   text-align: center;
   padding-top: 1em;
-
   font-family: Poppins;
   max-height: 150px;
 }
@@ -60,10 +59,20 @@
   justify-content: center;
 }
 
+#my_corner:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 #contact_us {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#contact_us:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #sign_up_and_sign_in {
@@ -78,10 +87,8 @@
   font-weight: 500;
   font-size: 28px;
   color: #e0e0e0;
-
   background: #373e4b;
-  box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.72),
-    -9px -9px 16px rgba(112, 112, 112, 0.54);
+  box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.72), -9px -9px 16px rgba(112, 112, 112, 0.54);
   border-radius: 48.5px;
   margin: 40px 0 40px 0;
   width: 150px;
@@ -89,6 +96,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition: transform 0.2s;
+}
+
+#sign_up:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 #sign_in {
@@ -97,23 +110,21 @@
   font-weight: 500;
   font-size: 28px;
   color: #eeeeee;
-
-  background: linear-gradient(
-    104.38deg,
-    #ff9733 -37.42%,
-    rgba(255, 122, 0, 0) 200%
-  );
-
-  box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.72),
-    -9px -9px 16px rgba(112, 112, 112, 0.54);
+  background: linear-gradient(104.38deg, #ff9733 -37.42%, rgba(255, 122, 0, 0) 200%);
+  box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.72), -9px -9px 16px rgba(112, 112, 112, 0.54);
   border-radius: 48.5px;
   margin: 40px 0 40px 0;
   width: 150px;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition: transform 0.2s;
+}
+
+#sign_in:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 #name_and_log_out {
@@ -126,13 +137,183 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   color: #e0e0e0;
   font-weight: 550;
-
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.32);
+}
+
+#ime:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #log_out {
   transform: scale(2.5) scaleX(-1) translate(-15px, 23px);
+}
+
+#log_out:hover {
+  color: #ff9733;
+  cursor: pointer;
+}
+
+#hamburger_menu {
+  display: none;
+  transform: scale(3) translate(-9px, 20px);
+  cursor: pointer;
+  height: 20px;
+}
+
+#hamburger_menu:hover {
+  color: #ff9733;
+}
+
+#drop_down {
+  transform: translateY(1.2em);
+  z-index: 1;
+  font-family: poppins;
+  text-align: right;
+  height: 100%;
+  background-color: #373e4b;
+  display: table;
+  color: #a0a0a0;
+  font-size: 1.5em;
+  border-radius: 10px;
+  box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.52);
+}
+
+#x {
+  margin-bottom: 20px;
+  transform: scale(1.7) translate(-10px, 10px);
+}
+
+#x:hover {
+  transform: scale(1.8) translate(-10px, 10px);
+}
+
+#drop_down > p {
+  padding: 10px;
+  margin: 0px;
+}
+
+#drop_down > p:hover {
+  cursor: pointer;
+  background-color: #ff9733;
+}
+
+.name_and_log_out_or_sign_up_and_sign_in > p {
+  padding: 10px;
+  margin: 0px;
+}
+
+.name_and_log_out_or_sign_up_and_sign_in > p:hover {
+  cursor: pointer;
+  background-color: #ff9733;
+}
+
+@media screen and (min-width: 1281px) {
+  /*da mi se ne ispisuje drop down kad dignemo*/
+  #drop_down {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #my_corner_and_contact_us {
+    display: none;
+  }
+
+  #sign_up_and_sign_in {
+    display: none;
+  }
+
+  #name_and_log_out {
+    display: none;
+  }
+
+  #rest_of_navigation {
+    justify-content: flex-end;
+  }
+
+  #hamburger_menu {
+    display: flex;
+    align-items: center;
+  }
+
+  /* #menu {
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.54);
+  } */
+}
+
+@media screen and (max-width: 700px) {
+  #logo_and_title {
+    transform: translateX(-6vw);
+  }
+
+  #main_logo {
+    transform: scale(0.5);
+  }
+
+  #organize {
+    font-size: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(-3vw);
+  }
+
+  #hamburger_menu {
+    transform: scale(2) translate(-1vw, 26px);
+    cursor: pointer;
+    height: 20px;
+  }
+
+  #drop_down {
+    transform: translate(-16vw, 36px);
+    cursor: pointer;
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #logo_and_title {
+    transform: translateX(-10vw);
+  }
+
+  #main_logo {
+    transform: scale(0.4);
+  }
+
+  #organize {
+    font-size: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(-9vw);
+  }
+
+  #hamburger_menu {
+    transform: scale(2) translate(-1vw, 23px);
+    cursor: pointer;
+    height: 20px;
+  }
+
+  #drop_down {
+    transform: translate(-16vw, 36px);
+    cursor: pointer;
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #hamburger_menu {
+    transform: scale(2) translate(-4vw, 23px);
+    cursor: pointer;
+    height: 20px;
+  }
+
+  #drop_down {
+    transform: translate(-25vw, 34px);
+    cursor: pointer;
+    font-size: 6vw;
+  }
 }

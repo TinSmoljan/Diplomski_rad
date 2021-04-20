@@ -1,7 +1,7 @@
 import React from "react";
-import cafeIllustration from "../images/Cafe-illustration1.png";
-import cafeIcon from "../images/cafe-icon.png";
-import styles from "../styling/mainPageCafe.module.css";
+import cafeIllustration from "../../images/Cafe-illustration1.png";
+import cafeIcon from "../../images/cafe-icon.png";
+import styles from "../../styling/homePage/mainPageCafe.module.css";
 
 const MainPageCafe: React.FC<{}> = () => {
   return (

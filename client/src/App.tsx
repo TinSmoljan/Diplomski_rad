@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import style from "./styling/App.module.css";
-import MainPageStart from "./components/mainPageStart";
-import MainPageGym from "./components/mainPageGym";
-import MainPageTransition from "./components/mainPageTransition";
-import MainPageRestaurant from "./components/mainPageRestaurant";
-import MainPageCafe from "./components/mainPageCafe";
+import MainPageStart from "./components/homePage/mainPageStart";
+import MainPageGym from "./components/homePage/mainPageGym";
+import MainPageTransition from "./components/homePage/mainPageTransition";
+import MainPageRestaurant from "./components/homePage/mainPageRestaurant";
+import MainPageCafe from "./components/homePage/mainPageCafe";
+import MainPageContactUs from "./components/homePage/mainPageContactUs";
+import MainPageSelection from "./components/homePage/mainPageSelection";
 
 function App() {
   const [loggedIn, setLoggedin] = useState(false);
@@ -17,6 +18,8 @@ function App() {
       <MainPageRestaurant></MainPageRestaurant>
       <MainPageTransition firstColor="orange"></MainPageTransition>
       <MainPageCafe></MainPageCafe>
+      <MainPageContactUs></MainPageContactUs>
+      <MainPageSelection></MainPageSelection>
     </div>
   );
 }

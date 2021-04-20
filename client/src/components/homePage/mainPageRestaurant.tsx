@@ -1,7 +1,7 @@
 import React from "react";
-import restaurantIllustration from "../images/Restaurant-illustration.png";
-import restaurantIcon from "../images/restaurant-icon.png";
-import styles from "../styling/mainPageRestaurant.module.css";
+import restaurantIllustration from "../../images/Restaurant-illustration.png";
+import restaurantIcon from "../../images/restaurant-icon.png";
+import styles from "../../styling/homePage/mainPageRestaurant.module.css";
 
 const MainPageRestaurant: React.FC<{}> = () => {
   return (

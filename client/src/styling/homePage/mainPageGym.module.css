@@ -1,0 +1,148 @@
+.instance_page {
+  height: 582px;
+  text-align: center;
+  padding-left: 6em;
+  padding-right: 7em;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+}
+
+.background_gym {
+  background-color: #373e4b;
+}
+
+.info {
+  font-family: Poppins;
+  grid-column: 3 / span 1;
+}
+
+.main_text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4.5vw;
+  line-height: 190%;
+  letter-spacing: 0.03em;
+  text-shadow: 9px 9px 9px rgba(0, 0, 0, 0.9);
+  text-align: right;
+}
+
+.main_text_color_gym {
+  color: #ffffff;
+}
+
+.secondary_text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3vw;
+  transform: translate(0px, -20px);
+  text-align: right;
+}
+
+.secondary_text_color_gym {
+  color: #b5b5b5;
+}
+
+.browse_botun {
+  box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.72), -9px -9px 16px rgba(112, 112, 112, 0.33);
+  border-radius: 84.5px;
+  font-size: 2.6vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  transition: transform 0.5s;
+}
+
+.browse_botun:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#gym_illustration {
+  transform: scale(0.9);
+  grid-column: 1 / span 1;
+}
+
+#gym_icon {
+  transform: scale(0.8) translate(0.65vw);
+}
+
+@media screen and (max-width: 1280px) {
+  .instance_page {
+    display: flex;
+  }
+
+  #gym_illustration {
+    display: none;
+  }
+
+  .main_text {
+    font-size: 6vw;
+    text-align: left;
+  }
+
+  .secondary_text {
+    font-size: 2vw;
+    text-align: left;
+  }
+
+  .browse_botun {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .instance_page {
+    height: 29em;
+  }
+  .main_text {
+    font-size: 6vw;
+    text-align: left;
+  }
+
+  .secondary_text {
+    font-size: 2.2vw;
+    text-align: left;
+  }
+
+  .browse_botun {
+    font-size: 5vw;
+  }
+}
+@media screen and (max-width:700px) {
+  .main_text {
+    font-size: 8vw;
+    transform: translateY(-20px);
+  }
+
+  .secondary_text {
+    font-size: 3vw;
+    transform: translateY(-40px);
+  }
+
+  .browse_botun {
+    font-size: 5vw;
+    transform: translateY(-20px);
+  }
+  
+}
+
+
+@media screen and (max-width: 415px) {
+  .instance_page {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+  .main_text {
+    font-size: 11vw;
+  }
+
+  .secondary_text {
+    font-size: 4.5vw;
+  }
+
+  .browse_botun {
+    font-size: 7vw;
+  }
+}

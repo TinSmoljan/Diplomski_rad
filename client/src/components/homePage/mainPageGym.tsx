@@ -1,7 +1,7 @@
 import React from "react";
-import gymIllustration from "../images/Fitness-illustration.png";
-import gymIcon from "../images/dumbell-icon.png";
-import styles from "../styling/mainPageGym.module.css";
+import gymIllustration from "../../images/Fitness-illustration.png";
+import gymIcon from "../../images/dumbell-icon.png";
+import styles from "../../styling/homePage/mainPageGym.module.css";
 
 const MainPageGym: React.FC<{}> = () => {
   return (

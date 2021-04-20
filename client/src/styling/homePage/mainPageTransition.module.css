@@ -4,9 +4,14 @@
   background: #373e4b;
 }
 
-.child {
+.child1 {
   height: 50px;
-  border-bottom: 3px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+.child2 {
+  height: 50px;
+  border-bottom: 4px solid transparent;
 }
 
 .second_orange {
@@ -30,7 +35,7 @@
 }
 
 .second_babyBlue {
-  background: #68E1FD;
+  background: #68e1fd;
 }
 
 .way_upRight {
@@ -41,4 +46,34 @@
   left: 0;
   clip-path: polygon(100% 0, 0% 100%, 100% 100%); /*upRight */
   z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .child1 {
+    height: 50px;
+    border-bottom: 6px solid transparent;
+  }
+
+  .child2 {
+    height: 50px;
+    border-bottom: 6px solid transparent;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #transition_blue {
+  }
+
+  #transition_orange {
+  }
+
+  .child1 {
+    height: 12vw;
+    border-bottom: 1px solid #fc9c43;
+  }
+
+  .child2 {
+    height: 50px;
+    border-bottom: -1px solid #68e1fd;
+  }
 }
