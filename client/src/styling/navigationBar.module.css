@@ -6,6 +6,8 @@
   padding-top: 1em;
   font-family: Poppins;
   max-height: 150px;
+  padding-left: 6em;
+  padding-right: 6em;
 }
 
 #logo_and_title {
@@ -29,16 +31,15 @@
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.54);
   font-size: 30px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 #rest_of_navigation {
   flex: 1;
   flex-grow: 4;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -68,6 +69,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-decoration: none;
+  color: #e0e0e0;
 }
 
 #contact_us:hover {
@@ -138,6 +141,7 @@
   flex-direction: column;
   justify-content: center;
   color: #e0e0e0;
+  font-family: poppins;
   font-weight: 550;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.32);
 }
@@ -190,6 +194,14 @@
   transform: scale(1.8) translate(-10px, 10px);
 }
 
+#drop_down_contact_us {
+  color: #a0a0a0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 10px;
+  text-decoration: none;
+}
+
 #drop_down > p {
   padding: 10px;
   margin: 0px;
@@ -238,10 +250,6 @@
     display: flex;
     align-items: center;
   }
-
-  /* #menu {
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.54);
-  } */
 }
 
 @media screen and (max-width: 700px) {
@@ -275,6 +283,11 @@
 }
 
 @media screen and (max-width: 415px) {
+  #navigation_bar {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+
   #logo_and_title {
     transform: translateX(-10vw);
   }

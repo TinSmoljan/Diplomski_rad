@@ -4,6 +4,7 @@ import { ReactComponent as Logo } from "../images/Main-logo.svg";
 import { RiLogoutBoxLine } from "react-icons/ri";
 import { RiMenu3Line } from "react-icons/ri";
 import { GrClose } from "react-icons/gr";
+import { NavLink } from "react-router-dom";
 
 const isLogedIn = (loggedIn: boolean): JSX.Element => {
   if (loggedIn === false) {
@@ -53,7 +54,11 @@ const hamburgerOrDropDownDecide = (dropDown: boolean, userOrVisitorHamburger: JS
       <div id={styles.drop_down}>
         <GrClose id={styles.x} onClick={() => setDropDown(false)}></GrClose>
         <p>My corner</p>
-        <p>Contact us</p>
+        <p>
+          <NavLink to="/contactUs" id={styles.drop_down_contact_us}>
+            Contact us
+          </NavLink>
+        </p>
         {userOrVisitorHamburger}
       </div>
     );
@@ -74,16 +79,20 @@ const NavigationBar: React.FC<navigationBar_properties> = ({ loggedIn }) => {
     <div id={styles.navigation_bar}>
       <div id={styles.logo_and_title}>
         <div id={styles.main_logo}>
-          <Logo />
+          <NavLink to="/">
+            <Logo />
+          </NavLink>
         </div>
-        <div id={styles.organize}>
+        <NavLink to="/" id={styles.organize}>
           <h1> Organize </h1>
-        </div>
+        </NavLink>
       </div>
       <div id={styles.rest_of_navigation}>
         <div id={styles.my_corner_and_contact_us}>
           <h2 id={styles.my_corner}>My corner</h2>
-          <h2 id={styles.contact_us}>Contact us</h2>
+          <NavLink to="/contactUs" id={styles.contact_us}>
+            <h2>Contact us</h2>
+          </NavLink>
         </div>
         {hamburgerOrDropDown}
         {userOrVisitor}
