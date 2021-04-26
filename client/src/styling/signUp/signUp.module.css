@@ -1,0 +1,118 @@
+#sign_up {
+  padding-bottom: 120px;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(55, 62, 75, 0.85), rgba(55, 62, 75, 0.85)), url(../../images/fancy-pants.jpg);
+}
+
+#sign_up_info {
+  padding-right: 6em;
+  padding-left: 6em;
+  font-family: poppins;
+}
+
+#sign_up_caption {
+  font-size: 75px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
+
+#inputs_paragraph_and_button {
+  display: flex;
+}
+
+#inputs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.individual_input {
+  background: rgba(78, 87, 105, 0.24);
+  border-radius: 10px;
+  font-family: Poppins;
+  font-size: 25px;
+  color: #aaaaaa;
+  font-style: italic;
+  padding: 20px 20px 20px 20px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: none;
+  margin: 5px 0 5px 0;
+}
+
+#error_different_passwords {
+  color: rgb(212, 0, 0);
+  padding: 0 0 0px 10px;
+}
+
+#break {
+  width: 50px;
+}
+
+#paragraph_and_button {
+  flex: 1;
+}
+
+#paragraph {
+  font-style: italic;
+  font-size: 33px;
+  color: #aaaaaa;
+}
+
+.submit {
+  background: #373e4b;
+  box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.72), -9px -9px 16px rgba(112, 112, 112, 0.33);
+  border-radius: 84.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #b5b5b5;
+  font-size: 40px;
+  transition: transform 0.5s;
+  height: 100px;
+  margin: 20px 0 20px 0;
+}
+.submit:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.no_display {
+  display: none;
+}
+
+@media screen and (max-width: 1285px) {
+  #paragraph {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1009px) {
+  #break {
+    display: none;
+  }
+  #paragraph_and_button {
+    display: none;
+  }
+  .no_display {
+    margin-top: 40px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #sign_up {
+    padding-bottom: 0px;
+  }
+  #sign_up_info {
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+  }
+  #sign_up_caption {
+    font-size: 50px;
+  }
+}

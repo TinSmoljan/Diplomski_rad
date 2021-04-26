@@ -4,13 +4,17 @@ import { ReactComponent as Logo } from "../images/Main-logo.svg";
 import { RiLogoutBoxLine } from "react-icons/ri";
 import { RiMenu3Line } from "react-icons/ri";
 import { GrClose } from "react-icons/gr";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const isLogedIn = (loggedIn: boolean): JSX.Element => {
   if (loggedIn === false) {
     return (
       <div id={styles.sign_up_and_sign_in}>
-        <div id={styles.sign_up}>Sign up</div>
+        <div id={styles.sign_up}>
+          <Link to="/signUp" className={styles.normalize_link}>
+            Sign up
+          </Link>
+        </div>
         <div id={styles.sign_in}>Sign in</div>
       </div>
     );
@@ -35,7 +39,11 @@ const isLogedInHamburger = (loggedIn: boolean): JSX.Element => {
   } else {
     return (
       <div className={styles.name_and_log_out_or_sign_up_and_sign_in}>
-        <p>Sign up</p>
+        <p>
+          <Link to="/signUp" className={styles.normalize_link}>
+            Sign up
+          </Link>
+        </p>
         <p>Sign in</p>
       </div>
     );
@@ -55,9 +63,9 @@ const hamburgerOrDropDownDecide = (dropDown: boolean, userOrVisitorHamburger: JS
         <GrClose id={styles.x} onClick={() => setDropDown(false)}></GrClose>
         <p>My corner</p>
         <p>
-          <NavLink to="/contactUs" id={styles.drop_down_contact_us}>
+          <Link to="/contactUs" className={styles.normalize_link}>
             Contact us
-          </NavLink>
+          </Link>
         </p>
         {userOrVisitorHamburger}
       </div>
@@ -69,7 +77,7 @@ type navigationBar_properties = {
   loggedIn: boolean;
 };
 
-const NavigationBar: React.FC<navigationBar_properties> = ({ loggedIn }) => {
+const NavigationBar: React.FC<navigationBar_properties> = ({ loggedIn }: navigationBar_properties) => {
   const userOrVisitor = isLogedIn(loggedIn);
   const userOrVisitorHamburger = isLogedInHamburger(loggedIn);
   let [dropDown, setDropDown] = useState(false);
@@ -79,20 +87,20 @@ const NavigationBar: React.FC<navigationBar_properties> = ({ loggedIn }) => {
     <div id={styles.navigation_bar}>
       <div id={styles.logo_and_title}>
         <div id={styles.main_logo}>
-          <NavLink to="/">
+          <Link to="/">
             <Logo />
-          </NavLink>
+          </Link>
         </div>
-        <NavLink to="/" id={styles.organize}>
+        <Link to="/" id={styles.organize}>
           <h1> Organize </h1>
-        </NavLink>
+        </Link>
       </div>
       <div id={styles.rest_of_navigation}>
         <div id={styles.my_corner_and_contact_us}>
           <h2 id={styles.my_corner}>My corner</h2>
-          <NavLink to="/contactUs" id={styles.contact_us}>
+          <Link to="/contactUs" id={styles.contact_us}>
             <h2>Contact us</h2>
-          </NavLink>
+          </Link>
         </div>
         {hamburgerOrDropDown}
         {userOrVisitor}

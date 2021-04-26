@@ -36,7 +36,7 @@
 
 .input1 {
   background: rgba(55, 62, 75, 0.24);
-  border-radius: 25px;
+  border-radius: 10px;
   width: 50%;
   font-family: Poppins;
   font-size: 25px;
@@ -50,7 +50,7 @@
 }
 #input2 {
   background: rgba(55, 62, 75, 0.24);
-  border-radius: 25px;
+  border-radius: 10px;
   font-family: Poppins;
   font-size: 25px;
   font-style: italic;

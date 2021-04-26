@@ -84,6 +84,11 @@
   flex: 1;
 }
 
+Link {
+  text-decoration: none;
+  color: #000;
+}
+
 #sign_up {
   font-family: Poppins;
   font-style: normal;
@@ -128,6 +133,11 @@
 #sign_in:hover {
   cursor: pointer;
   transform: scale(1.05);
+}
+
+.normalize_link {
+  text-decoration: none;
+  color: #e0e0e0;
 }
 
 #name_and_log_out {
@@ -179,7 +189,7 @@
   height: 100%;
   background-color: #373e4b;
   display: table;
-  color: #a0a0a0;
+  color: #e0e0e0;
   font-size: 1.5em;
   border-radius: 10px;
   box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.52);
@@ -192,14 +202,6 @@
 
 #x:hover {
   transform: scale(1.8) translate(-10px, 10px);
-}
-
-#drop_down_contact_us {
-  color: #a0a0a0;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 10px;
-  text-decoration: none;
 }
 
 #drop_down > p {
