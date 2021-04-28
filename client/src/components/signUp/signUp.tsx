@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import NavigationBar from "../navigationBar";
 import styles from "../../styling/signUp/signUp.module.css";
-import { JsxElement } from "typescript";
 
 type myProps = {
   loggedIn: boolean;

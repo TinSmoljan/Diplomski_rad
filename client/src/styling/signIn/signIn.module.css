@@ -1,0 +1,143 @@
+#sign_in {
+  background: url(../../images/fancy-pants-edited.png), url(../../images/orange-rectangle.png);
+  background-size: 42vw, 58vw;
+  background-repeat: repeat-y, repeat-y;
+  background-position: left, right;
+  height: 100vh;
+}
+
+#sign_in_info {
+  font-family: poppins;
+  display: flex;
+  padding-left: 6em;
+  padding-right: 6em;
+  justify-content: space-between;
+  height: 60%;
+}
+
+#border_caption_inputs_and_button {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#border_and_caption {
+  display: flex;
+  align-items: flex-end;
+}
+
+#border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4px;
+  height: 82px;
+  background-color: #ff9733;
+  margin-right: 20px;
+}
+
+#caption {
+  font-size: 75px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.individual_input {
+  background: rgba(78, 87, 105, 0.24);
+  border-radius: 10px;
+  font-family: Poppins;
+  font-size: 25px;
+  color: #aaaaaa;
+  font-style: italic;
+  padding: 20px 20px 20px 20px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: none;
+  margin: 5px 0 5px 0;
+}
+
+#submit {
+  background: #373e4b;
+  box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.72), -9px -9px 16px rgba(112, 112, 112, 0.33);
+  border-radius: 84.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #b5b5b5;
+  font-size: 40px;
+  transition: transform 0.5s;
+  height: 100px;
+  margin: 20px 0 20px 0;
+}
+#submit:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+#sphere {
+  align-self: center;
+  /* height: fit-content; */
+  transform: scale(0.7);
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60vw;
+  font-style: italic;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1280px) {
+  #sign_in {
+    background-image: url(../../images/fancy-pants-edited.png);
+    background-size: 100%;
+  }
+
+  #sign_in_info {
+    justify-content: center;
+    transform: translateY(2em);
+  }
+  #sphere {
+    display: none;
+  }
+  #paragraph {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #border_caption_inputs_and_button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #sign_in_info {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    height: 70%;
+    transform: translateY(0em);
+  }
+
+  #border_and_caption {
+    align-items: center;
+  }
+
+  #caption {
+    font-size: 50px;
+  }
+}

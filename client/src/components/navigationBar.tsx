@@ -15,7 +15,11 @@ const isLogedIn = (loggedIn: boolean): JSX.Element => {
             Sign up
           </Link>
         </div>
-        <div id={styles.sign_in}>Sign in</div>
+        <div id={styles.sign_in}>
+          <Link to="/signIn" className={styles.normalize_link}>
+            Sign in
+          </Link>
+        </div>
       </div>
     );
   } else {
@@ -44,7 +48,11 @@ const isLogedInHamburger = (loggedIn: boolean): JSX.Element => {
             Sign up
           </Link>
         </p>
-        <p>Sign in</p>
+        <p>
+          <Link to="/signIn" className={styles.normalize_link}>
+            Sign in
+          </Link>
+        </p>
       </div>
     );
   }

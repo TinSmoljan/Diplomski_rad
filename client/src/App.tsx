@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import MainPage from "./components/homePage/mainPage";
 import ContactUs from "./components/contactUs/contactUs";
 import SignUp from "./components/signUp/signUp";
+import SignIn from "./components/signIn/signIn";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -20,13 +21,11 @@ function App() {
         <Route path="/signUp">
           <SignUp loggedIn={loggedIn}></SignUp>
         </Route>
+        <Route path="/signIn">
+          <SignIn loggedIn={loggedIn}></SignIn>
+        </Route>
       </Switch>
     </Router>
-    // <Router>
-    //   <div className="App">
-    //     <SignUp loggedIn={loggedIn}></SignUp>
-    //   </div>
-    // </Router>
   );
 }
 
